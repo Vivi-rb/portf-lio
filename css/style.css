@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /* sempre colocar no ínicio de qualquer programa para eliminar todos os espaços pré definidos por diferentes navegadores */
+
 a {
     text-decoration: none; /*comando para tirar o underline dos icons*/
+}
+
+body {
+    background: url("../img/bg_desktop.jpg") no-repeat top center/cover; /* "../" serve para voltar uma pasta; "cover" cobre 100% o fundo do site, sem cortar*/
 }
