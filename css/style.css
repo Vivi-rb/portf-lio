@@ -1,13 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap'); /*o link para copiar a fonte importada do "Google Fontes"; selecionar a fonte > "get font" > "get embed code" > @import*/
+
 * {
     margin: 0;
-    padding: 0;
+    padding: 0; 
     box-sizing: border-box;
 } /* sempre colocar no ínicio de qualquer programa para eliminar todos os espaços pré definidos por diferentes navegadores */
 
-a {
-    text-decoration: none; /*comando para tirar o underline dos icons*/
-}
-
 body {
     background: url("../img/bg_desktop.jpg") no-repeat top center/cover; /* "../" serve para voltar uma pasta; "cover" cobre 100% o fundo do site, sem cortar*/
+}
+
+a {
+    text-decoration: none; /*comando para tirar o underline dos icons*/
+    color: white;
+}
+
+p, footer, a, li{ /*separar os elementos que quero personalizar com vírgula, se possuem a mesma propriedade (apenas o "a" possui text-decoration, então pode repetir*/
+    color: white;
+}
+
+/* body * {
+    tudo que estiver dentro do body sofrerá esta determinada personalização
+}*/
+
+p {
+    font-family: "Shadows Into Light", cursive; /*copiar de baixo do @import*/
+}
+
+.container {
+    max-width: 580px;
+    margin: 50px auto; /*margin serve para expandir oespaçamento externo*/
+    padding: 0 25px; /*padding serve para expandir oespaçamento interno*/
+
+}
+
+.perfil{
+    text-align: center;
+    padding: 25px 0;
+}
+
+.perfil img {
+    width: 500px;
+    border-radius: 100%;/*propriedade para arredondar elementos no programa*/
 }
