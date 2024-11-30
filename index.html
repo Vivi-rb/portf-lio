@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
-    <link rel="stylesheet" href="css/style.css"> <!--TAG para vincular o css com o html-->
-</head>
-    <body>
-        <div class="container">
-            <div class="perfil">
-                <img src="img/tema dark.jpeg" alt="Foto de uma mulher branca, com os olhos e cabelo castanho ondulado, vestindo uma blusa preta e em uma parede de cor clara ao fundo. "> 
-                <p>@vvivi.2💗</p> <!--Atalho: Windows + "." abre aba de emojis-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfólio</title>
+        <link rel="stylesheet" href="css/style.css"> <!--TAG para vincular o css com o html-->
+        <script defer src="js/script.js"></script>
+    </head>
+        <body>
+            <div id="container">
+                <div id="perfil">
+                    <img
+                    class="profile-photo"
+                    src="img/tema dark.jpeg" 
+                    alt="Foto de uma mulher branca, com os olhos e cabelo castanho ondulado, vestindo uma blusa preta e em uma parede de cor clara ao fundo. "> 
+                    <p>@vvivi.2💗</p> <!--Atalho: Windows + "." abre aba de emojis-->
+                </div>
+
+                <div id="switch" onclick="toggleMode()">
+                    <button></button>
+                    <span></span>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="#">Um pouco sobre mim</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Baixar currículo</a>
+                    </li>
+
+                    <li>
+                        <a href="">Ver meu Portfólio</a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank">
+                            Projetos realizados</a>
+                    </li>
+               </ul>
+
+            <div id="social-links">
+                <a href="https://www.instagram.com/vvivi.2?igsh=c3poYjZqdDhkcWl3&utm_source=qr" target="_blank"> 
+                    <ion-icon name="logo-instagram"></ion-icon> 
+                </a>
+
+                <a href="www.linkedin.com/in/vivianribeiro2" target="_blank"> 
+                    <ion-icon name="logo-linkedin"></ion-icon> 
+                </a>
+
+                <a href="https://github.com/Vivi-rb" target="_blank"> 
+                    <ion-icon name="logo-github"></ion-icon> 
+                </a>
             </div>
 
-            <ul>
-                <li>
-                    <a href="">Um pouco sobre mim</a>
-                </li>
+            <footer> 
+                Feito com o ❤ junto com os alunos da <a href=""> Etec de Embu. </a> <!-- tipo uma "div", mas serve como um rodapé da página (boas práticas)-->
+            </footer>
 
-                <li>
-                    <a href="">Baixar currículo</a>
-                </li>
-
-                <li>
-                    <a href="">Ver meu Portfólio</a>
-                </li>
-
-                <li>
-                    <a href="">Projetos realizados</a>
-                </li>
-
-            </ul>
-
-            <div>
-                <a href="https://www.instagram.com/vvivi.2?igsh=c3poYjZqdDhkcWl3&utm_source=qr"> <ion-icon name="logo-instagram"></ion-icon> </a>
-                <a href="www.linkedin.com/in/vivianribeiro2"> <ion-icon name="logo-linkedin"></ion-icon> </a>
-                <a href="https://github.com/Vivi-rb"> <ion-icon name="logo-github"></ion-icon> </a>
             </div>
-            <footer> Feito com o ❤ junto com os alunos da <a href=""> Etec de Embu. </a></footer> <!-- tipo uma "div", mas serve como um rodapé da página (boas práticas)-->
-        </div>
-
-
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> <!--link do JavaScript da empresa que está fornecendo os ícones do insta, git e linkedin-->
     </body>

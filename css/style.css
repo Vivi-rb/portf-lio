@@ -1,45 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap'); /*o link para copiar a fonte importada do "Google Fontes"; selecionar a fonte > "get font" > "get embed code" > @import*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box;
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */ 
+    box-sizing: border-box; /* Define o box model para incluir bordas e preenchimento no tamanho total */
 } /* sempre colocar no ínicio de qualquer programa para eliminar todos os espaços pré definidos por diferentes navegadores */
 
+/* Modo escuro padrão */
 body {
     background: url("../img/bg_desktop.jpg") no-repeat top center/cover; /* "../" serve para voltar uma pasta; "cover" cobre 100% o fundo do site, sem cortar*/
+    height: 100vh; /* Define a altura do corpo como 100% da altura da janela de visualização */
+}
+
+body * {
+    color: white; /* Define a cor do texto de todos os elementos filhos como branco */
+}
+
+p { 
+    font-family: "Inter", sans-serif; /* Aplica a fonte 'Inter' aos parágrafos */
 }
 
 a {
-    text-decoration: none; /*comando para tirar o underline dos icons*/
-    color: white;
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
 }
 
-p, footer, a, li{ /*separar os elementos que quero personalizar com vírgula, se possuem a mesma propriedade (apenas o "a" possui text-decoration, então pode repetir*/
-    color: white;
+#container {
+    width: 100%; /* Faz o container ocupar 100% da largura disponível*/
+    max-width: 580px; /* Define uma largura máxima para o container */
+    margin: 56px auto 0px; /* Centraliza o container horizontalmente e define um espaçamento superior */
+    padding: 0 24px; /* Expande o espaçamento interno do container*/
 }
 
-/* body * {
-    tudo que estiver dentro do body sofrerá esta determinada personalização
-}*/
-
-p {
-    font-family: "Shadows Into Light", cursive; /*copiar de baixo do @import*/
+/* Profile */
+#perfil{
+    text-align: center; /* Centraliza o conteúdo do perfil */
+    padding: 24px; /* Adiciona preenchimento interno*/
 }
 
-.container {
-    max-width: 580px;
-    margin: 50px auto; /*margin serve para expandir oespaçamento externo*/
-    padding: 0 25px; /*padding serve para expandir oespaçamento interno*/
-
-}
-
-.perfil{
-    text-align: center;
-    padding: 25px 0;
-}
-
-.perfil img {
-    width: 500px;
+#perfil img {
+    width: 300px;
     border-radius: 100%;/*propriedade para arredondar elementos no programa*/
 }
