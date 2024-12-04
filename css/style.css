@@ -27,7 +27,7 @@ a {
 
 #container {
     width: 100%; /* Faz o container ocupar 100% da largura disponível*/
-    max-width: 580px; /* Define uma largura máxima para o container */
+    max-width: 588px; /* Define uma largura máxima para o container */
     margin: 56px auto 0px; /* Centraliza o container horizontalmente e define um espaçamento superior */
     padding: 0 24px; /* Expande o espaçamento interno do container*/
 }
@@ -39,6 +39,102 @@ a {
 }
 
 #perfil img {
-    width: 300px;
+    width: 112px;
     border-radius: 100%;/*propriedade para arredondar elementos no programa*/
 }
+
+#perfil p {
+    font-weight: 500; /* Define o peso da fonte como médio */
+    line-height: 24px; /* Define a altura da linha */
+    margin-top: 8px; /* Adiciona espaçamento acima do texto do perfil */
+}
+
+/* Switch */
+#switch {
+    position: relative; /* Define a posição relativa para posicionar elementos filhos */
+    width: 64px; /* Define a largura do switch */
+    margin: 4px auto; /* Centraliza o switch horizoltalmente */
+}
+
+#switch button {
+    width: 32px; /* Define a largura do botão */
+    height: 32px; /* Define a altura do botão */
+    background: white url(../img/moon-stars.svg) no-repeat center; /* Define a cor e o ícone do botão */
+    border: 0; /* Remove a borda padrão do botão*/
+    border-radius: 50%; /* Faz o botão ser circular */
+    position: absolute; /* Permite posicionar o botão dentro do switch */
+    top: 50%; /* Posiciona o botão no meio vertical do switch */
+    left: 0; /* Alinha o botão à esquerda do switch */
+    z-index: 1; /* Garante que o botão esteja acima de otros elementos */
+    transform: translateY(-50%); /* Ajusta o botão para ficar perfeitamente centralizado verticalmente */
+    animation: slide-back 0.2s; /* Adiciona uma animação para o botão */
+}
+
+.light #switch button {
+    animation: slide-in 0.2s forwards; /* Adiciona uma animação para o botão  no modo claro */
+    background: white url(../img/sun.svg) no-repeat center; /* Altera  o ícone de fundo para um sol no modo claro*/
+}
+
+#switch button:hover {
+    outline: 8px solid rgba(255, 255, 255,0.2); /* Adiciona um contorno ao botão ao passar o mouse */
+}
+
+#switch span {
+    display: block; /* Faz o elemento  span ocupar uma linha inteira */
+    width: 64px; /* Define a largura do span */
+    height: 24px; /* Define a altura do span */
+    background: rgba(255, 255, 255, 0.05); /* Define a cor de fundo translúcida */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Adiciona uma borda com opacidade */
+    backdrop-filter: blur(4px); /* Adiciona um efeito de desfoque ao fundo */
+    -webkit-backdrop-filter: blur(4px); /* Compatibilidade com navegadores baseados em Webkit */
+    border-radius: 9999px; /* Faz o span ser completamente oval */
+}
+
+.light #switch span {
+    background: rgba(0, 0, 0, 0.05); /* Altera a cor de fundo no modo claro */
+    border: 1px solid rgba(0, 0, 0, 0.05); /* Altera a cor da borda no modo claro */
+}
+
+/* Links */
+ 
+ul {
+    list-style: none; /* Remove os marcadores de lista dos itens */
+    display: flex; /* Usa o layout flexbox para os itens da lista */
+    flex-direction: column; /* Organiza os itens da lista em coluna */
+    gap: 16px; /* Adiciona espaçamento de 16px entre os itens */
+    padding: 24px 0; /* Adiciona preenchimento acima e abaixo da lista */
+}
+
+ul li a {
+    display: flex; /* Usa o layout  flexbox para o link */
+    align-items: center; /* Alinha os itens do link verticalmente ao centro */
+    justify-content: center; /* Alinha os itens do link horizoltalmente ao centro */
+    color: white; /* Define a cor do texto do link como branca */
+    padding: 16px 24px; /* Adiciona preenchimento dentro dos links */
+    background: rgba(255, 255, 255, 0.05); /* Define um fundo translúcido para o link */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Adiciona uma borda com opacidade */
+    border-radius: 8px; /* Arredonda os cantos do link */
+    backdrop-filter: blur(4px); /* Aplica um efeito de desfoque ao fundo do link */
+    -webkit-backdrop-filter: blur(4px); /* Compatibilidade com navegadores baseados em Webkit */
+    text-decoration: none; /* Remove a decoração padrão de sublinhado dos links */
+    font-weight: 500; /* Define o peso da fonte do link */
+    transition: background 0.2s; /* Define uma transição suave para a mudança de cor do fundo */
+}
+
+ul li a:hover {
+    background: rgba(0, 0, 0, 0.02); /* Altera a cor de fundo ao passar o mouse */
+    border: 1.5px solid white; /* Aumenta a espessura da borda e muda de cor para branco */
+}
+
+.light ul li a {
+    background: rgba(0, 0, 0 ,0.05); /* Altera o fundo do link no modo claro */
+    border: 1px solid rgba(0, 0, 0, 0.5 ); /* Altera a borda do link no modo claro */
+}
+
+.light ul li a:hover {
+    background: rgba(0, 0, 0, 0.02); /* Altera a cor de fundo ao passar o mose no modo claro */
+    border: 1.5px solid black; /* Altera a cor da borda ao passar o mouse no modo claro*/
+}
+
+
+
