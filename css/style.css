@@ -39,8 +39,7 @@ a {
 }
 
 #perfil img {
-    width: 112px;
-    border-radius: 100%;/*propriedade para arredondar elementos no programa*/
+    width: 112px; /* Define a largura da imagem do perfil */
 }
 
 #perfil p {
@@ -136,5 +135,79 @@ ul li a:hover {
     border: 1.5px solid black; /* Altera a cor da borda ao passar o mouse no modo claro*/
 }
 
+/* Social links */
+#social-links {
+    display: flex; /* Usa o layout flexbox para os links sociais */
+    justify-content: center; /* Centtraliza os links  sociais horizontalmente */
+    padding: 24px 0; /* Adiciona preenchimento acima e abaixo dos links sociais */
+    font-size: 24px; /* Define o tamanho da fonte para os ícones sociais */
+}
 
+#social-links a {
+    color: white; /* Define a cor padrão dos ícones sociais como branca */
+    display: flex; /* Usa o layout flexbox para os ícones sociais */
+    align-items: center; /* Alinha os ícones sociais verticalmente ao centro */
+    justify-content: center; /* Alinha os ícones sociais horizontalmente ao centro */
+    padding: 16px; /* Adiciona preenchimento dentro dos links sociais */
+    transition: background 0.2s; /* Define uma transição suave para a mudança de cor do fundo */
+    border-radius: 50%; /* Torna os ícones sociais circulares */
+}
 
+#social-links a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Altera a cor de fundo ao passar o mouse */
+}
+
+.light #social-links a:hover {
+    background: rgba(0, 0, 0, 0.1); /* Altera a cor de fundo no modo claro ao passar o mouse */
+}
+
+footer {
+    padding: 24px 0; /* Adiciona preenchimento acima e abaixo do rodapé */
+    text-align: center; /* Centraliza o conteúdo do rodapé */
+    font-size: 14px; /* Define o tamanho da fonte do rodapé */
+}
+
+.profile-photo {
+    border-radius: 50%; /* Torna a foto de perfil circular */
+    border: 3px solid #FF5627; /* Define a borda da foto de perfil com a cor laranja */
+}
+
+.light .profile-photo {
+    border: 3px solid #4B55EA; /* Altera a da borda da foto de perfil para azul no modo claro */
+}
+
+/* Estilo para modo claro */
+.light a, .light p, .light ion-icon {
+    color: black; /* Altera a cor do texto dos links, parágrafos e ícones para preto no modo claro */
+}
+
+/* media-queries - PARA RESPONSIVIDADE */
+@media (min-width: 700px) {
+    body {
+        background: url(../img/bg_desktop.jpg) no-repeat top center/cover; /* Altera o fundo do corpo para desktop em telas maiores */
+    }
+
+    .light body {
+        background: url(../img/bg_desktop_light.jpg) no-repeat top center/cover; /* Altera o fundo do corpo para desktop no modo claro*/
+    }
+}
+
+/* Animation */
+@keyframes slide-in {
+    from {
+        left: 0; /* Define a posição inicial do botão no slide-in */
+    }
+    to {
+        left: 50%; /* Define a posição final do botão no slide-in */
+    }
+}
+
+@keyframes slide-back {
+    from {
+        left: 50%; /* Define a posição inicial do botão slide-back */
+    }
+    to {
+        left: 0; /* Define a posição final do botão slide-back */
+    }
+}
+    
